@@ -1,16 +1,18 @@
 void main() {
-  
- calculSurfaceTotalePave(10, 20, 20); 
-  
+
+ calculSurfaceBasePave( 10, 20); 
+ 
   
 }
 
-double calculSurfaceTotalePave(double longueur, double largeur, double hauteur) {
+
+double calculSurfaceBasePave(double longueur, double largeur) {
   
-  double totalSurface = 2*(longueur * largeur) + 2*(longueur*hauteur) + 2*(largeur * hauteur);
+  double surface = longueur*largeur;
   
-  print(totalSurface);
-  return totalSurface;
-   
+  print(surface);
+    
+  return surface;
+  
   
 }
